@@ -1,0 +1,31 @@
+{
+  "name": "v-hooks",
+  "version": "0.0.1",
+  "description": "一个基于现代化浏览器的工具库",
+  "type": "module",
+  "module": "dist/index.es.js",
+  "main": "dist/index.umd.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vue",
+    "hooks",
+    "utils"
+  ],
+  "author": "hong <hisunhongri@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.4",
+    "vite-plugin-dts": "^3.9.1",
+    "vitest": "^2.0.3"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  }
+}

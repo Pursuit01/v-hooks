@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "declaration": true, // 导出类型声明文件
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "lib": ["ESNext", "DOM"],
+    "allowSyntheticDefaultImports": true
+  },
+  "types": ["vite/client"],
+  "exclude": ["node_modules", "dist", "vite.config.ts"],
+  "include": ["packages/*", "*.d.ts"]
+}
