@@ -12,12 +12,15 @@ export default defineConfig({
   ],
   build: {
     target: "esnext",
-    chunkSizeWarningLimit: 0.1,
+    chunkSizeWarningLimit: 10,
     lib: {
       entry: path.resolve(__dirname, "packages/index.ts"),
       name: "vHooks", // 在formats为 'umd' 或 'iife' 时是必需的
       fileName: (format: any) => `index.${format}.js`,
       formats: ["es", "umd"] // 指定打包产物的类型
+    },
+    rollupOptions: {
+      external: ["vue"]
     }
   }
 })
